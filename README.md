@@ -6,35 +6,35 @@ Este proyecto ofrece una implementación clara y modular de cuatro patrones de d
 
 1. Observador (Observer)
 
-Caso de Uso: Un profesor notifica a sus alumnos suscritos cada vez que publica una nueva tarea.
+- Caso de Uso: Un profesor notifica a sus alumnos suscritos cada vez que publica una nueva tarea.
 
-Componentes: `Professor` (el publicador) y `Student` (los suscriptores).
+- Componentes: `Professor` (el publicador) y `Student` (los suscriptores).
 
-Objetivo: Demostrar cómo los objetos pueden suscribirse y recibir actualizaciones automáticas de otro objeto (el sujeto) cuando su estado cambia.
+- Objetivo: Demostrar cómo los objetos pueden suscribirse y recibir actualizaciones automáticas de otro objeto (el sujeto) cuando su estado cambia.
 
 2. Adaptador (Adapter)
 
-Caso de Uso: Un cliente HTTP que puede intercambiar su motor de peticiones (`fetch` o `axios`) sin cambiar el código cliente.
+- Caso de Uso: Un cliente HTTP que puede intercambiar su motor de peticiones (`fetch` o `axios`) sin cambiar el código cliente.
 
-Componentes: `FetchAdapter` y `AxiosAdapter` que se ajustan a una interfaz común IHttpClient.
+- Componentes: `FetchAdapter` y `AxiosAdapter` que se ajustan a una interfaz común IHttpClient.
 
-Objetivo: Permitir que interfaces incompatibles trabajen juntas. En este caso, se unifica la forma de realizar peticiones HTTP.
+- Objetivo: Permitir que interfaces incompatibles trabajen juntas. En este caso, se unifica la forma de realizar peticiones HTTP.
 
 3. Singleton
 
-Caso de Uso: Garantizar una única instancia para la conexión a una base de datos de inventario en toda la aplicación.
+- Caso de Uso: Garantizar una única instancia para la conexión a una base de datos de inventario en toda la aplicación.
 
-Componentes: La clase `ConexionDB` que solo puede ser instanciada una vez.
+- Componentes: La clase `ConexionDB` que solo puede ser instanciada una vez.
 
-Objetivo: Asegurar que una clase tenga una sola instancia y proporcionar un punto de acceso global a ella.
+- Objetivo: Asegurar que una clase tenga una sola instancia y proporcionar un punto de acceso global a ella.
 
 4. Fábrica (Factory)
 
-Caso de Uso: Crear diferentes tipos de notificadores (Email, SMS, WhatsApp) a través de una fábrica centralizada sin que el cliente conozca los detalles de su creación.
+- Caso de Uso: Crear diferentes tipos de notificadores (Email, SMS, WhatsApp) a través de una fábrica centralizada sin que el cliente conozca los detalles de su creación.
 
-Componentes: `NotifierFactory` que crea instancias que cumplen con la interfaz `INotifier`.
+- Componentes: `NotifierFactory` que crea instancias que cumplen con la interfaz `INotifier`.
 
-Objetivo: Delegar la creación de objetos a una clase especializada, permitiendo añadir nuevos tipos de objetos sin modificar el código cliente.
+- Objetivo: Delegar la creación de objetos a una clase especializada, permitiendo añadir nuevos tipos de objetos sin modificar el código cliente.
 
 Estructura del Proyecto
 El código está organizado de manera modular para mantener cada patrón aislado y fácil de estudiar.
